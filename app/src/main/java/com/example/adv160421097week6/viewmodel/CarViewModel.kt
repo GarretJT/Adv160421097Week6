@@ -29,7 +29,7 @@ class CarViewModel(application: Application) : AndroidViewModel(application) {
         carLoadErrorLD.value = false
 
         queue?.let { queue ->
-            val url = "http://localhost/cars/cars.json"
+            val url = "http://10.0.2.2/cars/cars.json"
 
             val stringRequest = StringRequest(
                 Request.Method.GET, url,
